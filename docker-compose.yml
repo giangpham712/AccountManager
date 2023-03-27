@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  accountmanager.webapi:
+    image: ${DOCKER_REGISTRY-}accountmanagerwebapi
+    build:
+      context: .\AccountManager.WebApi
+      dockerfile: Dockerfile
